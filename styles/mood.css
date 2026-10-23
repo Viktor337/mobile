@@ -1,0 +1,319 @@
+.mood {
+  padding: 48px 16px 20px;
+  gap: 12px;
+  align-items: center;
+}
+
+.mood__illustration {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+}
+
+.mood__circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mood__circle--1 {
+  width: 56px;
+  height: 56px;
+  left: 25px;
+  top: 32px;
+  background: var(--color-accent-soft);
+}
+
+.mood__circle--2 {
+  width: 44px;
+  height: 44px;
+  left: 58px;
+  top: 45px;
+  background: var(--color-accent-soft);
+}
+
+.mood__circle--3 {
+  width: 40px;
+  height: 40px;
+  left: 12px;
+  top: 51px;
+  background: #eef2ff;
+}
+
+.mood__cloud {
+  position: absolute;
+  width: 80px;
+  height: 36px;
+  left: 16px;
+  top: 58px;
+  background: var(--color-accent-soft);
+  border-radius: 19px;
+}
+
+.mood__sparkle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 84px;
+  top: 25px;
+  background: rgba(196, 181, 253, 0.4);
+  border-radius: 50%;
+}
+
+.mood__title {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+
+.mood__subtitle {
+  color: var(--color-muted);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+}
+
+.mood__card {
+  width: 100%;
+  padding: 16px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+}
+
+.mood__input {
+  width: 100%;
+  height: 192px;
+  padding: 12px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.mood__input::placeholder {
+  color: var(--color-muted);
+  opacity: 1;
+}
+
+.mood__btn {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  transition: background-color 0.2s;
+}
+
+.mood__btn--primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.mood__btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.mood__nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.mood__link {
+  width: 100%;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  color: var(--color-muted);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color 0.2s;
+}
+
+.mood__link:hover {
+  color: var(--color-text);
+}
+
+.mood__divider {
+  width: 1px;
+  height: 16px;
+  background: transparent;
+}
+
+.mood__disclaimer {
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    align-items: center;
+    padding: 32px;
+  }
+
+  .screen {
+    max-width: 520px;
+    min-height: 900px;
+    border-radius: 28px;
+  }
+
+  .mood {
+    padding: 56px 32px 28px;
+    gap: 16px;
+  }
+
+  .mood__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .mood__subtitle {
+    font-size: 17px;
+  }
+
+  .mood__input {
+    height: 240px;
+  }
+
+  .mood__btn {
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .mood__nav {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .mood__link {
+    width: auto;
+    height: 32px;
+    padding: 0 16px;
+    font-size: 17px;
+  }
+
+  .mood__disclaimer {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    align-items: center;
+    padding: 48px;
+  }
+
+  .screen {
+    max-width: 960px;
+    min-height: 640px;
+    border-radius: 32px;
+  }
+
+  .mood {
+    padding: 56px 48px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "illustration title"
+      "illustration subtitle"
+      "card card"
+      "actions actions"
+      "nav nav"
+      "divider divider"
+      "disclaimer disclaimer";
+    gap: 16px 40px;
+    align-items: center;
+    justify-items: stretch;
+  }
+
+  .mood__illustration {
+    grid-area: illustration;
+    justify-self: center;
+    align-self: center;
+    width: 160px;
+    height: 160px;
+  }
+
+  .mood__title {
+    grid-area: title;
+    text-align: left;
+    font-size: 32px;
+    line-height: 40px;
+    align-self: end;
+  }
+
+  .mood__subtitle {
+    grid-area: subtitle;
+    text-align: left;
+    font-size: 18px;
+    line-height: 26px;
+    align-self: start;
+  }
+
+  .mood__card {
+    grid-area: card;
+    margin-top: 16px;
+  }
+
+  .mood__input {
+    height: 220px;
+    font-size: 17px;
+  }
+
+  .mood__btn {
+    grid-area: actions;
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .mood__nav {
+    grid-area: nav;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+
+  .mood__link {
+    width: auto;
+    height: 32px;
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .mood__divider {
+    grid-area: divider;
+  }
+
+  .mood__disclaimer {
+    grid-area: disclaimer;
+    text-align: left;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}

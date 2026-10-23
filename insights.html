@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Твои инсайты</title>
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/insights.css">
+</head>
+<body>
+  <div class="screen insights">
+    <header class="insights__header">
+      <a class="insights__back" href="index.html" aria-label="Назад"></a>
+      <span class="insights__label">Аналитика</span>
+    </header>
+
+    <main class="insights__body">
+      <div class="insights__hero">
+        <div class="insights__hero-icon">
+          <img src="https://placehold.co/80x80" alt="Иконка аналитики">
+        </div>
+        <h1 class="insights__title">Твои инсайты</h1>
+        <p class="insights__subtitle">Основано на твоих записях за последние 30 дней</p>
+      </div>
+
+      <div class="insights__cards">
+        <article class="insights__card">
+          <div class="insights__card-head">
+            <span class="insights__card-icon insights__card-icon--blue">📊</span>
+            <h2 class="insights__card-title">Закономерность</h2>
+          </div>
+          <p class="insights__card-text">Тревога усиливается по вечерам (18:00–22:00)</p>
+        </article>
+
+        <article class="insights__card">
+          <div class="insights__card-head">
+            <span class="insights__card-icon insights__card-icon--purple">🔍</span>
+            <h2 class="insights__card-title">Триггер</h2>
+          </div>
+          <p class="insights__card-text">Чаще всего после: дедлайнов, недосыпа, конфликтов</p>
+        </article>
+
+        <article class="insights__card">
+          <div class="insights__card-head">
+            <span class="insights__card-icon insights__card-icon--green">💡</span>
+            <h2 class="insights__card-title">Что помогает</h2>
+          </div>
+          <div class="insights__tags">
+            <span class="insights__tag">Дыхание 4-7-8 <em>(5 раз)</em></span>
+            <span class="insights__tag">Прогулка <em>(3 раза)</em></span>
+            <span class="insights__tag">Дневник <em>(7 раз)</em></span>
+          </div>
+        </article>
+
+        <article class="insights__card">
+          <div class="insights__card-head">
+            <span class="insights__card-icon insights__card-icon--orange">📈</span>
+            <h2 class="insights__card-title">Прогресс за месяц</h2>
+          </div>
+          <div class="insights__progress">
+            <div class="insights__progress-item">
+              <p class="insights__progress-label">Настроение</p>
+              <p class="insights__progress-value">5.2 <span class="insights__progress-arrow">→</span> <strong>7.1</strong></p>
+            </div>
+            <div class="insights__progress-item">
+              <p class="insights__progress-label">Тревога</p>
+              <p class="insights__progress-value">7/10 <span class="insights__progress-arrow">→</span> <strong class="insights__progress-value--violet">4/10</strong></p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <a class="insights__cta" href="recommendation.html">Персональная рекомендация</a>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        Дневник
+      </a>
+      <a href="history.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        История
+      </a>
+      <a href="insights.html" class="bottom-nav__item bottom-nav__item--active">
+        <span class="bottom-nav__icon"></span>
+        Инсайты
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

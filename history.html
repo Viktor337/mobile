@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Твоя неделя</title>
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/history.css">
+</head>
+<body>
+  <div class="screen history">
+    <header class="history__header">
+      <a class="history__back" href="index.html" aria-label="Назад"></a>
+      <h1 class="history__title">Твоя неделя</h1>
+    </header>
+
+    <main class="history__body">
+      <section class="history__card">
+        <div class="history__card-top">
+          <div class="history__card-info">
+            <p class="history__card-value">📈 Настроение: 5.2 → 6.8</p>
+            <p class="history__card-label">Прогресс за 7 дней</p>
+          </div>
+          <div class="history__card-badge"></div>
+        </div>
+
+        <div class="history__chart">
+          <div class="history__chart-line"></div>
+          <div class="history__chart-area"></div>
+          <div class="history__chart-dots">
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+            <span class="history__dot"></span>
+          </div>
+          <div class="history__chart-labels">
+            <span>Пн</span>
+            <span>Вт</span>
+            <span>Ср</span>
+            <span>Чт</span>
+            <span>Пт</span>
+            <span>Сб</span>
+            <span>Вс</span>
+          </div>
+        </div>
+
+        <div class="history__card-footer">
+          <div class="history__stat">
+            <span class="history__stat-emoji">😟</span>
+            <p><span class="history__stat-label">Чаще всего: </span><span class="history__stat-value">тревога</span></p>
+          </div>
+          <div class="history__stat">
+            <span class="history__stat-emoji">🫁</span>
+            <p><span class="history__stat-label">Помогает: </span><span class="history__stat-value">дыхание, заземление</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="history__recent">
+        <h2 class="history__recent-title">Последние записи:</h2>
+
+        <article class="history__entry">
+          <div class="history__entry-top">
+            <p class="history__entry-date">Сегодня, 14:30</p>
+            <span class="history__entry-emoji">😔</span>
+          </div>
+          <p class="history__entry-title">Усталость</p>
+          <p class="history__entry-action">✓ Дыхание 4-7-8</p>
+        </article>
+
+        <article class="history__entry">
+          <div class="history__entry-top">
+            <p class="history__entry-date">Вчера, 19:15</p>
+            <span class="history__entry-emoji">😊</span>
+          </div>
+          <p class="history__entry-title">Радость и спокойствие</p>
+          <p class="history__entry-action">✓ Прогулка 30 мин</p>
+        </article>
+
+        <article class="history__entry">
+          <div class="history__entry-top">
+            <p class="history__entry-date">23 мая, 10:45</p>
+            <span class="history__entry-emoji">😰</span>
+          </div>
+          <p class="history__entry-title">Легкая тревога</p>
+          <p class="history__entry-action">✓ Медитация</p>
+        </article>
+      </section>
+
+      <a class="history__cta" href="recommendation.html">Персональная рекомендация</a>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        Дневник
+      </a>
+      <a href="history.html" class="bottom-nav__item bottom-nav__item--active">
+        <span class="bottom-nav__icon"></span>
+        История
+      </a>
+      <a href="insights.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        Инсайты
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

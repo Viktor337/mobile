@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ритуал на сегодня — шаг 1</title>
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="stylesheet" href="/styles/ritual.css">
+</head>
+<body>
+  <div class="screen ritual">
+    <header class="ritual__header">
+      <a class="ritual__back" href="recommendation.html" aria-label="Назад"></a>
+
+      <div class="ritual__headline">
+        <h1 class="ritual__title">Ритуал на сегодня</h1>
+        <div class="ritual__progress">
+          <span class="ritual__progress-text">Шаг 1 из 3</span>
+          <div class="ritual__progress-dots">
+            <span class="ritual__dot ritual__dot--active"></span>
+            <span class="ritual__dot"></span>
+            <span class="ritual__dot"></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="ritual__body">
+      <div class="ritual__image">
+        <img src="https://placehold.co/327x256" alt="Иллюстрация шага">
+      </div>
+
+      <div class="ritual__card">
+        <div class="ritual__card-head">
+          <span class="ritual__card-emoji">📝</span>
+          <h2 class="ritual__card-title">1. Дневник (5 мин)</h2>
+        </div>
+        <p class="ritual__card-text">
+          Запиши, что было за день.<br>
+          Короткие мысли помогут лучше понять свое состояние и освободить голову перед отдыхом.
+        </p>
+      </div>
+
+      <div class="ritual__actions">
+        <a class="ritual__btn ritual__btn--primary" href="ritual-2.html">
+          <span class="ritual__btn-icon"></span>
+          Отметить выполненным
+        </a>
+        <a class="ritual__btn ritual__btn--link" href="ritual-2.html">Пропустить шаг</a>
+      </div>
+    </main>
+
+    <nav class="bottom-nav">
+      <a href="index.html" class="bottom-nav__item bottom-nav__item--active">
+        <span class="bottom-nav__icon"></span>
+        Дневник
+      </a>
+      <a href="history.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        История
+      </a>
+      <a href="insights.html" class="bottom-nav__item">
+        <span class="bottom-nav__icon"></span>
+        Инсайты
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

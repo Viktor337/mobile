@@ -1,0 +1,435 @@
+.ritual__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 48px 24px 16px;
+}
+
+.ritual__back {
+  width: 20px;
+  height: 20px;
+  background: var(--color-text);
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.ritual__headline {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ritual__headline--left {
+  align-items: flex-start;
+}
+
+.ritual__title {
+  color: var(--color-text);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.ritual__title--center {
+  flex: 1;
+  text-align: center;
+  padding-right: 36px;
+}
+
+.ritual__progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ritual__progress-text {
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ritual__progress-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.ritual__dot {
+  width: 12px;
+  height: 12px;
+  background: var(--color-slate-200);
+  border-radius: 50%;
+}
+
+.ritual__dot--active {
+  background: var(--color-accent);
+}
+
+.ritual__body {
+  flex: 1;
+  padding: 16px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ritual__step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.ritual__step-label {
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.ritual__bar {
+  width: 240px;
+  display: flex;
+  gap: 8px;
+}
+
+.ritual__bar--wide {
+  width: 100%;
+}
+
+.ritual__bar-fill {
+  flex: 1;
+  height: 6px;
+  background: var(--color-slate-200);
+  border-radius: 3px;
+}
+
+.ritual__bar-fill--done {
+  background: var(--color-accent);
+}
+
+.ritual__image {
+  width: 100%;
+  height: 256px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.ritual__image--small {
+  height: 224px;
+}
+
+.ritual__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ritual__video {
+  position: relative;
+  width: 100%;
+  height: 192px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: var(--color-slate-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ritual__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.ritual__play {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: var(--shadow-button);
+}
+
+.ritual__play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid var(--color-accent);
+}
+
+.ritual__card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ritual__card--centered {
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px 32px;
+  gap: 16px;
+}
+
+.ritual__card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ritual__card-emoji {
+  font-size: 24px;
+  line-height: 36px;
+  flex-shrink: 0;
+}
+
+.ritual__card-emoji--large {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.ritual__card-title {
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.ritual__card-text {
+  color: var(--color-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.ritual__time {
+  width: 100%;
+  padding: 16px;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.ritual__time-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ritual__time-icon::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+.ritual__time-label {
+  color: var(--color-muted);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ritual__time-value {
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+}
+
+.ritual__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ritual__btn {
+  height: 56px;
+  border-radius: var(--radius-md);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background-color 0.2s;
+}
+
+.ritual__btn--full {
+  width: 100%;
+}
+
+.ritual__btn--primary {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.ritual__btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.ritual__btn--secondary {
+  background: var(--color-secondary);
+  color: var(--color-white);
+}
+
+.ritual__btn--secondary:hover {
+  background: #a78bfa;
+}
+
+.ritual__btn--link {
+  background: transparent;
+  color: var(--color-accent);
+  height: 44px;
+}
+
+.ritual__btn--link:hover {
+  color: var(--color-accent-hover);
+}
+
+.ritual__btn-icon {
+  width: 16px;
+  height: 16px;
+  background: currentColor;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+    align-items: center;
+    padding: 32px;
+  }
+
+  .screen {
+    max-width: 520px;
+    min-height: 900px;
+    border-radius: 28px;
+  }
+
+  .ritual__header {
+    padding: 56px 32px 16px;
+  }
+
+  .ritual__body {
+    padding: 16px 32px 32px;
+    gap: 28px;
+  }
+
+  .ritual__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .ritual__image {
+    height: 300px;
+  }
+
+  .ritual__card-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .ritual__btn {
+    height: 60px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    align-items: center;
+    padding: 48px;
+  }
+
+  .screen {
+    max-width: 720px;
+    min-height: 640px;
+    border-radius: 32px;
+  }
+
+  .ritual__header {
+    padding: 48px 48px 16px;
+  }
+
+  .ritual__body {
+    padding: 16px 48px 48px;
+    gap: 32px;
+  }
+
+  .ritual__title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .ritual__image {
+    height: 320px;
+  }
+
+  .ritual__card {
+    padding: 28px;
+    border-radius: 20px;
+  }
+
+  .ritual__card--centered {
+    padding: 48px 32px 40px;
+  }
+
+  .ritual__card-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ritual__card-text {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .ritual__actions {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .ritual__btn {
+    min-width: 240px;
+    height: 60px;
+    font-size: 17px;
+  }
+
+  .ritual__btn--full {
+    width: auto;
+    min-width: 320px;
+    align-self: center;
+  }
+}
